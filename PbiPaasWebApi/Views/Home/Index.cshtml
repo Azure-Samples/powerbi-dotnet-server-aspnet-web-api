@@ -1,0 +1,33 @@
+﻿<h1>PowerBI - PaaS - Server - WebAPI</h1>
+<p>Demonstrate how to create simple REST API to serve reports from workspace using WebAPI</p>
+
+<p>This json api could be consumed by various types of clients.</p>
+
+<h2>Example requests:</h2>
+<ul>
+    <li>
+        <p>
+            All reports
+            <br /><a href="/api/reports"><code>/api/reports</code></a>
+        </p>
+    </li>
+    <li>
+        <p>
+            All reports with embed tokens
+            <br /><a href="/api/reports?includeTokens=true"><code>/api/reports?includeTokens=true</code></a>
+        </p>
+    </li>
+    <li>
+        <p>
+            Search by report name
+            <br /><a href="/api/reports?query=re"><code>/api/reports?query=re</code></a>
+        </p>
+    </li>
+    <li>
+        <p>
+            Find single report 
+            <br /><a href="/api/reports/5dac7a4a-4452-46b3-99f6-a25915e0fe55"><code>/api/reports/5dac7a4a-4452-46b3-99f6-a25915e0fe55</code></a>
+            <br /><small>(Note: If you change the workspace collection or workspace id in the Web.config for testing, this id will not exist and the request will fail)</small>
+        </p>
+    </li>
+</ul>

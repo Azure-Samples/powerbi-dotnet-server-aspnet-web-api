@@ -1,0 +1,19 @@
+﻿using Microsoft.PowerBI.Api.Beta.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace PbiPaasWebApi.Models
+{
+    public class ReportWithToken : Report
+    {
+        public string AccessToken { get; set; }
+
+        public ReportWithToken(Report report, string accessToken = null)
+            : base(report.Id, report.Name, report.WebUrl, report.EmbedUrl)
+        {
+            AccessToken = accessToken;
+        }
+    }
+}
