@@ -11,9 +11,17 @@ You must have a workspace collection provisioned in azure.  For infromation abou
 
 1. Clone repository
 
-  `git clone https://github.com/Azure-Samples/powerbi-dotnet-server-aspnet-web-api.git`
-  
-2. Set properties in Web.config (SigningKey, WorkspaceCollection, and WorkspaceId) from Azure Portal.
+	```
+	git clone https://github.com/Azure-Samples/powerbi-dotnet-server-aspnet-web-api.git
+	```
+
+2. Set properties in Web.config from Azure Portal.
+
+	```
+	<add key="powerbi:WorkspaceCollectionName" value="[your workspace collection name]" />
+	<add key="powerbi:WorkspaceCollectionAccessKey" value="[your workspace collection access key]" />
+	<add key="powerbi:WorkspaceId" value="[workspace id containing your reports]" />
+	```
 
 3. Build and Run solution 
 
